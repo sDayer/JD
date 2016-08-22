@@ -1,0 +1,218 @@
+/*-----------------公共样式-------------------------*/
+body,h1,h2,h3,h4,h5,p{margin: 0;padding: 0;font:12px/2em "宋体","微软雅黑";}
+ul,li,ol,dl,dt,dd,span{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;color: #333;}
+img,input{margin: 0;padding: 0;border: none;outline-style: none;}
+body,html{margin: 0;padding: 0;}
+/*-----------------headerbox-------------------------*/
+#headerbox{width: 100%;background: #f1f1f1;}
+#header{margin: 0 auto;width: 1210px;height: 30px;position: relative;}
+#header_left{float: left;height: 30px;}
+#header_left li{padding:0px 10px;font-size: 12px;line-height: 30px;}
+#addres_list{border:1px solid #eee;border-top:none;width: 313px;height: 239px;padding-top: 7px;padding-left:10px;position: absolute;top: 30px;left: 0px;display: none; }
+#addres_list .addres{margin-top: 5px;margin-right:20px;float: left;text-align: left;}
+#addres_list .addres a{display: block;height: 24px;line-height: 24px;padding-left:8px;padding-right:8px;text-align:left;color: #333;}
+#addres_list .addres a:hover{color: #c81623;background: #eee;}
+#header_left li:hover{background: #fff;border: 1px solid #eee;border-bottom:none;}
+#header_right{float: right;height: 30px;}
+#header_right li{float: left;line-height: 30px;padding-left: 12px;padding-right: 12px;background: url(../images/headerbg.jpg) no-repeat left 9px;position: relative; }
+#header_right li a:hover{color: #c81623;}
+#header_right #bgnone{background-image:none;}
+#header_right #header_bh2 a{background: url(../images/jd2.jpg) no-repeat left center;}
+#login{border:1px solid #ddd;display:none;border-top:none;position: absolute;top: 30px;left: 0px;width: 282px;height: 192px;padding-top:20px;padding-left: 15px;background: url(../images/header_topbg.jpg) no-repeat 20px 15px;}
+#login_top{width: 198px;height: 63px;padding-left: 70px;}
+#login_bottom a{display:block;width: 128px;line-height: 24px;float: left;}
+#header_bh2_pic{position: absolute;top: 30px;left: 0;border:1px solid #ddd;display:none;border-top:none;}
+#header_bh3_pic{position: absolute;top: 30px;left: 0;border:1px solid #ddd;display:none;border-top:none;}
+#customer_server{position: absolute;top: 30px;left: 0;border:1px solid #ddd;display:none;border-top:none;width:170px;height: 165px;}
+#customer_server #customer1{height: 104px;width: 161px;border-bottom: 1px dashed #333;padding-left: 9px;}
+#customer_server #customer2{padding-left: 9px;}
+#customer_server a{display:block;width: 80px;line-height: 24px;float: left;}
+#header_nav{display:none;padding-top:24px;position: absolute;top: 30px;right:0px;border:1px solid #ddd;border-top:none;width:1210px;height: 185px;}
+#header_nav #header_nav1{width: 349px;height: 150px;padding-left: 15px;float: left;border-right: 1px solid #666;}
+#header_nav #header_nav2{width: 264px;height: 150px;padding-left: 15px;float: left;border-right: 1px solid #666;}
+#header_nav #header_nav3{width: 264px;height: 150px;padding-left: 15px;float: left;border-right: 1px solid #666;}
+#header_nav #header_nav4{width: 264px;height: 150px;padding-left: 15px;float: left;}
+#header_nav ul li{background: none;float: left;padding-left: 0px;}
+#header_nav ul li a{display: block;line-height: 24px;font-size: 12px;text-align: left;width: 75px;height: 24px;}
+/*-----------------logobox-------------------------*/
+#logobox{width: 100%;height: auto;}
+#logo{width: 1210px;height: 100px;margin: 0 auto;}
+#logo_left{width: 362px;height: 60px;padding: 20px 0;float: left;}
+#search{width: 538px;height: 40px;float: left;margin-top: 25px;}
+#form{width: 538px;height: 36px;}
+#txt{float:left;width: 446px;height: 24px;line-height: 24px;color: #666;padding: 4px;margin-bottom: 4px;border-width: 2px 0 2px 2px;border-color: #b61d1d;border-style:solid;outline: 0;font-size: 14px;}
+#sub{float:left;width: 82px;height: 36px;background: #b61d1d;border: none;color: #fff;font-size: 16px;}
+#shopcar{background: #f9f9f9;float: left;margin-top: 25px;margin-left:102px;height: 36px;width: 141px;}
+#shopcon{position: relative;background:url(../images/JD_06.jpg) no-repeat 9px center;width: 75px;height: 34px;border: 1px solid #dfdfdf;padding: 0 28px 0 36px;line-height: 34px;text-align: center;}
+#shopcon #sl{position: absolute;top: -14px;left: 104px;}
+#shopcon #tb{position: absolute;top: 11px;right: 10px;}
+#logo_nav{width: 518px;height: 20px;line-height: 20px;overflow: hidden;float: left;}
+#logo_nav a{float: left;margin-right: 10px;}
+#logo_nav a:hover{color:#c81623;}
+.clr{display: block;overflow: hidden;clear: both;height: 0;line-height: 0;font-size: 0;}
+/*-----------------goodsbox-------------------------*/
+#good_box{width: 100%;height: auto;}
+.goods{width: 1210px;overflow:hidden;height:44px;margin: 0 auto;}
+.goods #goods_classify{float: left;position: relative;width: 210px;height: 44px;background: #b1191a;}
+.goods #goods_classify .dt a{display: block;width: 190px;height: 44px;padding: 0 10px;background: #b1191a;font-size: 15px;line-height: 44px;color: #fff;}
+.goods #goods_nav{float: left;width: 728px;height: 44px;}
+#goods_nav li{float: left;}
+#goods_nav li a{font-size: 16px;height: 44px;padding: 0 20px;text-align: center;color: #333;line-height: 44px;}
+#goods_nav li a:hover{color: #c81623;}
+.goods #surprise{width: 200px;height: 54px;position: relative;float: left; }
+.goods #surprise img{display: block;position: absolute;top: -10px;}
+.subline{width: 100%;height: 2px;background: #b1191a;}
+/*-----------------bannerCont-------------------------*/
+#bannerCont{position: relative;width: 1210px;height: auto;overflow: hidden;margin: 0 auto;}
+#bannerCont #sideNav{float:left;position: relative;width: 210px;height: auto;background: #c81623;color: #fff;font-size: 14px;}
+#bannerCont #sideNav ul li{display:block;margin:0;height: 31px;line-height: 31px;padding-left: 12px;padding-right: 12px;}
+#bannerCont #sideNav ul li a{line-height: 31px;float: left;color: #fff;}
+#bannerCont #sideNav ul li em{line-height: 31px;float: right;}
+#bannerCont #sideNav li:hover {background: #f7f7f7;color: #c81623;}
+#bannerCont #sideNav li:hover a{color: #c81623;}
+#bannerCont .sideNav .class1{position: absolute;left: 210px;top: 0;width: 999px;height: 525px;border: 1px solid #f00;border-top: none;border-left: none;}
+#bannerCont .jdNews{margin-top: 10px;width: 250px;height: auto;border: 1px solid #E4E4E4;border-bottom: none;float: right;}
+#bannerCont .jdNews .jdNewsListTitle {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    overflow: hidden;
+    line-height: 35px;
+    border-bottom: 1px dotted #E4E4E4;
+}
+#bannerCont .jdNews .jdNewsListTitle .jdNewsListCont {
+    font-size: 16px;
+    font-weight: normal;
+}
+#bannerCont .jdNews .jdNewsListTitle .newsMore {
+    position: absolute;
+    top: 2px;
+    right: 35px;
+}
+
+#bannerCont .jdNews .jdNewsList ul {
+    padding: 6px 10px;
+}
+#bannerCont .jdNews .jdNewsList ul li {
+    line-height: 24px;
+}
+#bannerCont .jdNews .jdNewsList a:hover {
+    color: #c81623;
+}
+    #banner{
+		position: relative;
+	    width: 730px;
+	    height: 454px;
+	    overflow: hidden;
+	    margin: 8px;
+	    float: left;
+	}
+	#img_list{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 4380px;
+		height: 454px;
+	}
+	#img_list li{
+		float: left;
+	}
+	#btn{
+		position: absolute;
+		right: 270px;
+		bottom: 20px;
+	}
+	#btn li{
+		float: left;
+		margin-left: 10px;
+		width: 20px;
+		height: 20px;
+		background: #fff;
+		text-align: center;
+		border-radius: 10px;
+	}
+	#btn .active{
+		background: red;
+		color: #fff;
+	}
+#bannerCont #banner a {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -22.5px;
+    width: 30px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    color: #7f7f7f;
+}
+#bannerCont #banner a:hover {
+    color: #7f7f7f;
+}
+#bannerCont #banner a.leftBtn {
+    left: 10px;
+}
+#bannerCont #banner a.rightBtn {
+    right: 10px;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic {
+    margin: 0;
+    padding: 0;
+    width: 275px;
+    overflow: hidden;
+    border-top: 1px solid #E4E4E4;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li {
+    float: left;
+    width: 62px;
+    height: 68px;
+    text-align: center;
+    border-right: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+    cursor: pointer;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li:hover a {
+    color: #c81623;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i {
+    display: block;
+    margin: 15px auto 5px;
+    width: 25px;
+    height: 25px;
+    background: url("../images/right-nav.png") no-repeat;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i.calls {
+    background-position: 0 0;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i.thick {
+    background-position: -24px -25px;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i.film {
+    background-position: -25px -50px;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i.game {
+    background-position: -25px -75px;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i.lottery {
+    background-position: -25px -100px;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i.groupBuy {
+    background-position: -25px -125px;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i.hotel {
+    background-position: -25px -150px;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i.crowd {
+    background-position: -25px -175px;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i.fina {
+    background-position: -25px -200px;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i.gift {
+    background-position: -25px -225px;
+}
+#bannerCont .jdNews .jdNewsList .servicesPic li i.Ious {
+    background-position: -25px -250px;
+}
