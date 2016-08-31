@@ -1,0 +1,214 @@
+body,h1,h2,h3,h4,h5,h6,ol,dl,ul,dd,dt,li,img,p,button,input,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img{display: block;}
+a{text-decoration: none;color: #333;}
+#headerbox{
+  width: 100%;
+  height: 100px;
+}
+#header{
+  width: 1210px;
+  height: 100px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  background: url("../images/register_03.jpg") no-repeat 0px 27px;
+}
+#header div{
+  float: left;
+  margin-left: 186px;
+  height: 35px;
+  line-height:35px;
+  width: 137px;
+  border-left: 1px solid #666;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-top: 33px; 
+}
+#mainbox{
+  width: 100%;
+  height:475px;
+  background: #e61850;
+}
+#main {
+  width: 1210px;
+  height: 475px;
+  margin: 0 auto;
+  background:url("../images/login.jpg") no-repeat;
+  overflow: hidden;
+}
+.main_ctn {
+  width: 346px;
+  height: 369px;
+  background: #fff;
+  margin-top: 40px;
+  margin-left: 638px;
+}
+#main .main_ctn .main_title {
+  overflow: hidden;
+  width: 346px;
+  height: 38px;
+  padding-top: 18px;
+  border-bottom:1px solid #eee; 
+}
+#main .main_ctn .main_title span {
+  float: left;
+  display: block;
+  line-height: 20px;
+  height: 20px;
+  width: 171px;
+  font-size: 18px;
+  text-align: center;
+}
+#user_login{
+  border-left:1px solid #eee;
+  color:#e61850  
+}
+#main .main_ctn .main_alert {
+  width: 307px;
+  height: 27px;
+  background: #fff6d2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffe57d;
+  font-size: 14px;
+  line-height: 27px;
+  color: #666;
+  margin-left: 20px;
+}
+#main .main_ctn .main_alert span {
+  width: 17px;
+  height: 27px;
+  display: inline-block;
+  background: url("../images/pwd-icons-new.png") no-repeat -104px -20px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+#main .main_ctn #frm div {
+  height: 40px;
+  margin-bottom: 20px;
+}
+#main .main_ctn #frm #user_lable label span {
+  margin-left: 20px;
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  background: url("../images/pwd-icons-new.png");
+  border: 1px solid #bdbdbd;
+  border-right: 0;
+  float: left;
+}
+#main .main_ctn #frm #username {
+  width: 267px;
+  float: left;
+ line-height: 36px;
+  height: 36px;
+  outline: none;
+}
+#main .main_ctn #frm #password_lable label span {
+  margin-left: 20px;
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  background: url("../images/pwd-icons-new.png") no-repeat -48px 0;
+  border: 1px solid #bdbdbd;
+  border-right: 0;
+  float: left;
+}
+#main .main_ctn #frm #user_pwd {
+  width: 267px;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  outline: none;
+}
+#main .main_ctn .main_auto {
+  margin-left: 20px;
+  height: 20px;
+  width: 307px;
+  line-height: 20px;
+}
+#main .main_ctn .main_auto p {
+  width: 100px;
+  float: left;
+}
+#main .main_ctn .main_auto p #auto_login {
+  display: inline-block;
+  vertical-align: middle;
+}
+#main .main_ctn .main_auto p label {
+  font-size: 14px;
+  color: #8a8880;
+}
+#main .main_ctn .main_auto a {
+  font-size: 14px;
+  float: right;
+}
+#main .main_ctn #login_btn {
+  width: 307px;
+  height: 35px;
+  outline: none;
+  background: #e4393c;
+  border: 0;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin: 20px 0; 
+  margin-left: 20px;
+}
+.login_bottom{
+  border-top: 1px solid #eee;
+  height: 50px;
+  width: 346px;
+}
+.login_bottom .partner_login{
+  margin-left: 20px;
+  width: 307px;
+}
+#main .main_ctn .partner_login p a,
+#main .main_ctn .partner_login p span {
+  color: #8a8880;
+  font-size: 12px;
+  line-height: 50px;
+}
+#dw_right{
+  float: right;
+  padding-left: 20px;
+  background: url("../images/dwbg.jpg") no-repeat 0px center;
+}
+
+#footerbox{
+  width: 100%;
+}
+#footer{
+  width: 1210px;
+  margin: 0 auto;
+  padding-top:32px; 
+  border-top:1px solid #eee; 
+}
+#footer div{
+  margin-left: 853px;
+}
+#footer div span{
+  width: 18px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  
+  padding-left: 5px;
+  background: url("../images/jd_img.png") no-repeat -205px 0px;
+}
+#footer p {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #848484;
+}
+#footer p a {
+  color: #848484;
+}

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/register.css">
+	<script src="jquery-1.11.3.js"></script>
+</head>
+<body>
+	<div id="headerbox">
+		<div id="header">
+			<div>欢迎注册</div>
+			<span>已有账号<a href="login.html">请登录</a></span>
+		</div>
+	</div>
+	<div id="mainbox">
+		<div id="main">
+			<div id="main_left">
+				<div id="form">
+					<div>
+						<input class="class1" type="button" value="用户名">
+						<input class="class2" type="text" placeholder='您的账户名和登录名'>
+						<span class="span1">
+							*请输入4-20位字符用户名
+						</span>
+					</div>
+					<div>
+						<input class="class1" type="button" value="设置密码">
+						<input class="class2" type="password" placeholder='建议至少使用两种字符组合'>
+						<span class="span1">*密码不少于3位</span>
+					</div>
+					<div>
+						<input class="class1" type="button" value="确认密码">
+						<input class="class2" type="password" placeholder='请再次输入密码'>
+						<span class="span1">*两次密码输入不一致</span>
+					</div>
+                    <div id="email">
+                        <input class="class1" type="button" value='邮箱验证'>
+                        <input class="class2" type="text" placeholder='请输入邮箱'><span class="span1">*格式错误</span>
+                        <span class="span2">或<a id="tjsjyz">手机验证</a>
+                        </span>
+                    </div>
+					<div id="shouji">
+						<input class="class1" type="button" value="中国+86∨">
+						<input class="class2" type="text" placeholder='建议使用常用手机'>
+						<span class="span1">*请输入正确的手机号码
+                        </span>
+                        <span class="span2">或<a id="tjyxyz">邮箱验证</a>
+                        </span>
+					</div>
+					<div>
+						<input class="class1" type="button" value="验证码">
+						<input class="class2" type="text" placeholder='请输入验证码'>
+						<span class="span1">*请输入正确的验证码</span>
+					</div>
+					<div>
+						<input class="class1" type="button" value="手机验证码">
+						<input class="class2" type="text" placeholder='请输入手机验证码'>
+						<span class="span1">*请输入正确的手机验证码</span>
+					</div>
+                    <div class="reread">
+                        <input type="checkbox" id="has_agree">
+                        <span>
+                            我已阅读并同意 <a>《京东用户注册协议》</a></span>
+                    </div>
+					<input id="sub" type="button" value="立刻注册">
+				</div>
+			</div>
+			<div id="main_right">
+				<img src="images/register_07.jpg">
+                <div id="main_right_div1">
+                    <img src="images/register_11.jpg">
+                    <span>企业用户注册</span>
+                </div>
+                <div id="main_right_div2">
+                    <img src="images/register_18.jpg">
+                    <span><a>INTERNATIONAL</a><a>CUSTOMERS</a></span>
+                </div>
+                
+			</div>
+		</div>
+	</div>
+    <div id="footerbox">
+        <div id="footer">
+            <p class="links">
+                <a>关于我们</a>
+                <span>|</span>
+                <a>联系我们</a>
+                <span>|</span>
+                <a>人才招聘</a>
+                <span>|</span>
+                <a>商家入驻</a>
+                <span>|</span>
+                <a>广告服务</a>
+                <span>|</span>
+                <a>手机京东</a>
+                <span>|</span>
+                <a>商家入驻</a>
+                <span>|</span>
+                <a>友情链接</a>
+                <span>|</span>
+                <a>销售联盟</a>
+                <span>|</span>
+                <a>京东社区</a>
+                <span>|</span>
+                <a>京东公益</a>
+                <span>|</span>
+                <a>English Site</a>
+            </p>
+            <p class="copy">Copyright&copy;2004-2016  京东JD.com 版权所有</p>
+        </div>
+    </div>
+    
+</body>
+<script>
+	$(function(){
+        var jy=[0,0,0]
+        //检验用户名
+        $('input[type=text]').eq(0).blur(function(){
+        	var reg=/[a-z]{4,20}/i;
+        		if(reg.test($('input[type=text]').eq(0).val())){
+        			$(this).next().css('display','none')
+        			jy[0]=1;
+        		}else{
+        			$(this).next().css('display','block')
+        			jy[0]=0;
+        		}
+        })
+        $('#tjyxyz').click(function(){
+            //alert(1)
+            $('#email').css('display','block');
+            $(this).parent().css('display','none');
+        })
+        $('#tjsjyz').click(function(){
+            //alert(1)
+            $('#email').css('display','none');
+            $('#tjyxyz').parent().css('display','block');
+        })
+        $('input[type=password]').eq(0).blur(function(){
+        	var reg=/\w{3,}/i;
+        		if(reg.test($('input[type=password]').eq(0).val())){
+        			$(this).next().css('display','none')
+        			jy[1]=1;
+        		}else{
+        			$(this).next().css('display','block')
+        			jy[1]=0;
+        		}
+        		console.log($('input[type=password]').eq(0).val())
+
+        })
+        $('input[type=password]').eq(1).blur(function(){
+        	
+        		if($('input[type=password]').eq(1).val()==$('input[type=password]').eq(0).val()){
+        			$(this).next().css('display','none')
+        			jy[2]=1;
+        		}else{
+        			$(this).next().css('display','block')
+        			jy[2]=0;
+        		}
+        		console.log($('input[type=password]').eq(0).val())
+
+        })
+        $('input[type=text]').eq(1).blur(function(){
+            var reg=/^\w{1,}@[0-9a-z]+\.[a-z]+$/i;
+                if(reg.test($('input[type=text]').eq(1).val())){
+                    $(this).next().css('display','none')
+                    
+                }else{
+                    $(this).next().css('display','block')
+                    
+                }
+
+        })
+        $('input[type=text]').eq(2).blur(function(){
+            var reg=/^1\d{2,11}$/i;
+                if(reg.test($('input[type=text]').eq(2).val())){
+                    $(this).next().css('display','none')
+                    
+                }else{
+                    $(this).next().css('display','block')
+                    
+                }
+
+        })
+
+
+        $('#sub').click(function(){
+            console.log(jy)
+            if(jy[0]==1&&jy[1]==1&&jy[2]==1&&$('#has_agree').prop("checked")===true){
+
+
+            var ID=$('input[type=text]').eq(0).val();
+            var password=$('input[type=password]').eq(1).val();
+
+            console.log(ID+":"+password);
+            $.ajax({
+                url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+                type:"GET",
+                data:{
+                    status:"register",
+                    userID:ID,
+                    password:password
+                },
+                success:function(res){
+                    console.log(typeof res)
+                    console.log(res)
+                    switch(res){
+                        case "0":alert('重名了');
+                        break;
+                        case "1":alert('恭喜，注册成功了！');
+                        break;
+                        case "2":alert('去找后端大哥，和我没关系，他的电话号是');
+                        break;
+
+                    }
+                }
+            })
+            
+            }
+        })
+        
+    })
+
+</script>
+</html>

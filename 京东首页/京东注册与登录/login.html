@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/login.css">
+	<script src="jquery-1.11.3.js"></script>
+</head>
+<body>
+	  <div id="headerbox">
+		<div id="header">
+			<div>欢迎登录</div>
+		</div>
+	  </div>
+	  <div id="mainbox">
+		  <div id="main">
+	        <div class="main_ctn">
+	            <div class="main_title">
+	                <span>扫码登录</span>
+	                <span id="user_login">账户登录</span>
+	            </div>
+	            <div class="main_alert"><span></span>公共场所不建议自动登陆，以防账号丢失</div>
+	            <form id="frm">
+	                <div id="user_lable">
+	                    <label><span></span></label>
+	                    <input type="text" id="username"  placeholder="邮箱/用户名/已验证手机">
+						<span></span>
+	                </div>
+	                <div id="password_lable">
+	                    <label><span></span></label>
+	                    <input type="password" id="user_pwd" placeholder="密码">
+						<span></span>
+	                </div>
+	            </form>
+	            <div class="main_auto">
+	                <p>
+	                    <input type="checkbox" id="auto_login">
+	                    <label>自动登录</label>
+	                </p>
+	                <a>忘记密码</a>
+	            </div>
+	            <input type="button" value="登&nbsp;录" id="login_btn">
+	            <div class="login_bottom">
+	                <div class="partner_login">
+	                    <p>
+	                        <a href="#">京东钱包</a>
+	                        <span>|</span>
+	                        <a href="#">QQ</a>
+	                        <span>|</span>
+	                        <a>微信</a>
+	                        <a href="register.html" id="dw_right" style="font-size:20px;color:red;">立即注册</a>
+	                    </p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+    </div>
+    <div id="footerbox">
+        <div id="footer">
+        	<div><span></span><a style="font-size:13px;color:#ddd;">页面登录，问卷调查</a></div>
+            <p class="links">
+                <a>关于我们</a>
+                <span>|</span>
+                <a>联系我们</a>
+                <span>|</span>
+                <a>人才招聘</a>
+                <span>|</span>
+                <a>商家入驻</a>
+                <span>|</span>
+                <a>广告服务</a>
+                <span>|</span>
+                <a>手机京东</a>
+                <span>|</span>
+                <a>商家入驻</a>
+                <span>|</span>
+                <a>友情链接</a>
+                <span>|</span>
+                <a>销售联盟</a>
+                <span>|</span>
+                <a>京东社区</a>
+                <span>|</span>
+                <a>京东公益</a>
+                <span>|</span>
+                <a>English Site</a>
+            </p>
+            <p class="copy">Copyright&copy;2004-2016  京东JD.com 版权所有</p>
+        </div>
+    </div>
+</body>
+    <script>
+    $('input[type=button]').eq(0).click(function(){
+    	if($('#auto_login').prop('checked')===true){
+            var ID=$('input[type=text]').eq(0).val();
+            var password=$('input[type=password]').eq(0).val();
+            console.log(ID+":"+password);
+            $.ajax({
+                url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+                type:"POST",
+                data:{
+                    status:"login",
+                    userID:ID,
+                    password:password
+                },
+                success:function(res){
+                    switch(res){
+                        case "0":alert('用户名不存在');
+                        break;
+                        case "2":alert('用户名密码不符');
+                        break;
+                        default:console.log(res);alert('登陆成功');
+                        break;
+                    }
+                }
+
+            })
+        }
+    })
+    </script>
+</html>

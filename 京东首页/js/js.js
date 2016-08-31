@@ -1,6 +1,16 @@
 	window.onload=function(){
-    	hederbox();
-    	sidenav();
+         $('#headerbox').load('../html/header.html',function(){
+        
+       hederbox();
+        sidenav();
+        lunbo1();
+        centerCont();
+        likePic();
+
+    })
+        
+      
+
 
     }
     function hederbox(){
@@ -128,3 +138,219 @@
 	        }
 	    }
 	}
+	function lunbo1(){
+		var btnLeft = document.getElementById("leftBtn");
+        var btnRight = document.getElementById("rightBtn");
+
+        var oUl=document.getElementById('img_list');
+        var oLi=oUl.children[0];
+        var cOli = oLi.cloneNode(true);
+        oUl.appendChild(cOli);
+        oUl.style.width = oUl.offsetWidth+oLi.offsetWidth + 'px'
+        var aBtn=document.getElementById('btn').children;
+        for(var i=0;i<aBtn.length;i++){
+            aBtn[i].index=i;
+            aBtn[i].onclick=function(){
+                move(oUl,'left',-oLi.offsetWidth*this.index);
+                for(var j=0;j<aBtn.length;j++){
+                    aBtn[j].className='';
+                }
+                aBtn[this.index].className='active'
+            }
+        }
+        
+        var index=0;
+        var aLi=oUl.children;
+        //alert(oUl.children.length)
+        var oBanner=document.getElementById('banner');
+        var timer=null;
+        timer=setInterval(yd,2000);
+        oBanner.onmouseover=function(){
+            clearInterval(timer)
+            btnLeft.style.display='block';
+            btnRight.style.display='block';
+        }
+        oBanner.onmouseout=function(){
+            clearInterval(timer)
+            timer=setInterval(yd,2000)
+            btnLeft.style.display='none'
+            btnRight.style.display='none'
+        }
+        document.onmousedown = function(){
+            return false
+        }
+        btnLeft.onclick = function () {
+            if(index==1){
+                oUl.style.left=-3650+'px';
+                index=6;
+            }else{
+                index--;
+            }
+            console.log(index)
+            for(var j=0;j<aBtn.length;j++){
+                    aBtn[j].className='';
+                }
+            if(index != aLi.length-1){
+                aBtn[index].className = 'active'
+            }else{
+                aBtn[0].className = 'active';
+            }
+            move(oUl,'left',-oLi.offsetWidth*index);
+        }
+        btnRight.onclick = function () {
+            console.log(index);
+            yd();
+        }
+        function yd(){
+            if(index==aLi.length-1){
+                oUl.style.left=0;
+                index=1;
+            }else{
+                index++;
+            }
+            for(var j=0;j<aBtn.length;j++){
+                    aBtn[j].className='';
+                }
+            if(index != aLi.length-1){
+                aBtn[index].className = 'active'
+            }else{
+                aBtn[0].className = 'active';
+            }
+            move(oUl,'left',-oLi.offsetWidth*index);
+        }
+        
+	}
+	function centerCont(){
+		function fAjax(url,fn){
+            var ajax=new XMLHttpRequest();
+            ajax.open('GET',url,true);
+            ajax.send(null);
+            ajax.onreadystatechange=function(){
+                if(ajax.readyState==4&&ajax.status==200){
+                    fn(ajax.responseText);
+                }
+            }
+        }
+        fAjax('../data/JD_1.json',init);
+        var hoppage=4;
+        var n=1;
+        var oRes=null;
+        var pag;
+        function init(res){
+            oRes=eval(res);
+            pag=Math.ceil(oRes.length/hoppage);
+            //console.log(oRes);
+            setpage();
+        }
+        function setpage(){
+            var str='';
+            for(var i=(n-1)*hoppage;i<n*hoppage;i++){
+                if(i < oRes.length){
+                    str+='<li><img src='+oRes[i].url+' alt="" class="img"></li>'
+                }
+            }
+            document.getElementById('picList').innerHTML=str;
+        }
+        
+        var oRecommendCont=document.getElementById('recommendCont');
+        var oBtnL=document.getElementById('btnL');
+        var oBtnR=document.getElementById('btnR');
+        oRecommendCont.onmouseover=function(){
+            oBtnL.style.display='block';
+            oBtnR.style.display='block';
+        }     
+        oRecommendCont.onmouseout=function(){
+            oBtnL.style.display='none';
+            oBtnR.style.display='none';
+        }   
+        oBtnR.onclick=function(){
+            if(n<pag){
+                n++;
+            }else{
+                n=1;
+            }
+            setpage();
+        }
+        oBtnL.onclick=function(){
+            if(n>1){
+                n--;
+            }else{
+                n=pag;
+            }
+            setpage();
+        }
+	}
+	function likePic(){
+		function fAjax(url,fn){
+            var ajax=new XMLHttpRequest();
+            ajax.open('GET',url,true);
+            ajax.send(null);
+            ajax.onreadystatechange=function(){
+                if(ajax.readyState==4&&ajax.status==200){
+                    fn(ajax.responseText);
+                }
+            }
+        }
+        fAjax('../data/JD_2.json',init);
+        var hoppage=6;
+        var n=1;
+        var oRes=null;
+        var pag;
+        function init(res){
+            oRes=eval(res);
+            pag=Math.ceil(oRes.length/hoppage);
+            //console.log(oRes);
+            setpage();
+        }
+        function setpage(){
+            var str='';
+            for(var i=(n-1)*hoppage;i<n*hoppage;i++){
+                if(i < oRes.length){
+                    str+='<li><a href="#"><img src='+oRes[i].url+'><div class="botTxt"><p>乔丹（qiaodan）百搭板鞋 简约运动鞋平底鞋</p><h3 class="texRed marLef15">¥119.00</h3></div></a></li>'
+                }
+            }
+            document.getElementById('likePic').innerHTML=str;
+        }
+        var oBtnL=document.getElementById('guessbtn');
+        oBtnL.onclick=function(){
+            if(n>1){
+                n--;
+            }else{
+                n=pag;
+            }
+            setpage();
+        }
+	}
+	    
+
+   
+	    function getStyle(DOM,name){
+	        if(DOM.currentStyle){
+	            return DOM.currentStyle[name];
+	        }else{
+	            return getComputedStyle(DOM,false)[name];
+	        }
+	    }
+	    function move(DOM,attr,target){
+	        clearInterval(DOM.timer)
+	        DOM.timer=setInterval(function(){
+	            if(attr=='opacity'){
+	                var cur=Math.round(parseFloat(getStyle(DOM,attr))*100)
+	            }else{
+	                var cur=parseInt(getStyle(DOM,attr));
+	            }
+	            var speed=(target-cur)/10;
+	            speed=speed>0?Math.ceil(speed):Math.floor(speed);
+	            if(cur==target){
+	                clearInterval(DOM.timer)
+	            }else{
+	                if(attr=='opacity'){
+
+	                    DOM.style.filter='alpha(opacity:'+(cur+speed)+')'
+	                    DOM.style.opacity=(cur+speed)/100
+	                }else{
+	                    DOM.style[attr]=cur+speed+'px';
+	                }
+	            }
+	        },30)
+	    }
