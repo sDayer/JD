@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/register.css">
+	<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<div class="toolbar_box" >
+	<div class="toolbar">
+		<div class="toolbar-cont wide">
+			<ul class="fl">
+				<li>欢迎来到良品铺子官方商城！</li>
+				<li id="headerLogin">
+					<a class="log" href="login.html">[登录]</a>
+				</li>
+				<li id="headerRegister">
+					<a class="reg" href="register.html">[注册]</a>
+				</li>				
+				<li>
+					<a class="alipay">支付宝快捷登录</a>
+				</li>
+				<li>
+					<a class="qq">QQ</a>
+				</li>
+				<li>
+					<a class="weibo">微博登录</a>
+				</li>
+			</ul>
+			<ul class="fr">
+				<li class="thover">
+					<div class="top-user-info">
+						<a class="my-lppz dorp-title">关注良品
+							<i class="arrow"></i>
+						</a>
+						<div  class="gzlp">
+							<img src="../images/followhide.jpg" alt="">
+						</div>
+					</div>
+				</li>
+				<li class="tspacer">|</li>
+				<li><a>官方网站</a></li>
+				<li class="tspacer">|</li>
+				<li><span class="tel">全国订购热线：<em>400-1177-517</em></span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="headerbox">
+    <div class="header">
+        <div class="logo">
+            <img src="../images/register1.jpg" alt="">
+        </div>
+    </div>
+</div>
+<div class="main">
+		<div class="main_left">
+			<img src="../images/register2.jpg" class="pic" alt="">
+		</div>
+		<div class="main_right">
+			<div class="reg_title">
+				<strong class="tit">用户注册</strong>
+				<span>已有账户，<a href="login.html">在此登录&gt;</a></span>
+			</div>
+			<form action="">
+				<ul class="form_data">
+					<li>
+						<span class="tsq">
+							<b>* </b>
+							用户名：
+						</span>
+						<input class="inputs uname" type="text" required name="user" id="username" maxlength="20">
+						<span class="tishi t1">4-20位字符，支持汉字、字母、数字</span>
+					</li>
+					<li>
+						<span class="tsq">
+							<b>* </b>
+							密　码：
+						</span>
+						<input class="inputs pword" type="password" required name="password" id="password" maxlength="20">
+						<span class="tishi t2">6-20位字符，由字母数字和符号两种组合以上</span>
+					</li>
+					<li>
+						<span class="tsq">
+							<b>* </b>
+							确认密码：
+						</span>
+						<input class="inputs pword" type="password" equalTo="#password" required name="rePassword" id="rePassword" maxlength="20" tabindex="3">
+						<span class="tishi t3">请再次输入密码</span>
+					</li>
+					<li>
+						<span class="tsq">
+							<b>* </b>
+							手机号：
+						</span>
+						<input class="inputs phone" type="text" name="mobile" id="mobile" required maxlength="11" tabindex="4">
+						<span class="tishi t4" >请输入正确手机号</span>
+					</li>
+					<li>
+						<span class="tsq">
+							<b>* </b>
+							验证码：
+						</span>
+						<div class="yanzh">
+							<input class="inputs mcode" type="text" name="image" id="image" maxlength="20" tabindex="5">
+							<span class="verify">
+								<div class="yanzhengma" style="background:#eee;"></div>看不清？
+								<a class="change-img" id="hyz">换一张</a>
+							</span>
+							
+						</div>
+						<span class="tishi t5">验证码不一致</span>
+					</li>
+					<li>
+						<span class="tsq">
+							<b>* </b>
+							短信验证码：
+						</span>
+						<input class="inputs mcode" required type="text" name="smsCode" id="smsCode" maxlength="20" tabindex="6">
+						<input class="mc-btn" type="button" value="获取短信验证码" name="code-btn" id="code_btn">
+						<span class="tishi t6">请输入对应短信验证码</span>
+					</li>
+					<li class="clause">
+						<div class="agreement">
+							<b>* </b>
+							<input type="checkbox" id="has_agree">我已阅读并同意
+							<a onclick="hasUp($('.agree-popup'))" href="javascript:;">《良品铺子用户注册协议》</a>
+						</div>
+					</li>
+					<li>
+						<div class="submit">
+							<input id="smt_btn" class="smt-btn" type="button" value="同意协议并注册">
+						</div>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+<div class="footerbox">
+	<div class="footer">	
+		<div class="copyright">
+			Copyright@2006-2014 湖北良品铺子电子商务有限公司 All rights Reserved<br><a target="_blank" href="http://www.miibeian.gov.cn/publish/query/indexFirst.action">鄂ICP备15022981号</a>
+		</div>
+	</div>
+</div>
+</body>
+    <script type="text/javascript" src="../js/register.js"></script>
+</html>

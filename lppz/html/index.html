@@ -1,0 +1,1251 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>良品铺子商城</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+
+</head>
+<body>
+	<!-- top ad_img -->
+	<div class="top_ad_box">
+		<div class="top_ad">
+			<img src="../images/1.jpg" alt="">
+		</div>
+	</div>
+	<div class="toolbar">
+		<div class="toolbar-cont wide">
+			<ul class="fl">
+				<li>欢迎来到良品铺子官方商城！</li>
+				<li id="headerLogin">
+					<a class="log" href="login.html">[登录]</a>
+				</li>
+				<li id="headerRegister">
+					<a class="reg" href="register.html">[注册]</a>
+				</li>				
+				<li>
+					<a class="alipay">支付宝快捷登录</a>
+				</li>
+				<li>
+					<a class="qq">QQ</a>
+				</li>
+				<li>
+					<a class="weibo">微博登录</a>
+				</li>
+			</ul>
+			<ul class="fr">
+				<li class="thover">
+					<div class="top-user-info">
+						<a class="my-lppz dorp-title">我的良品<i class="arrow"></i></a>
+						<div class="my-lppz-layer" style="display:none;">
+						    <div class="dorp-spacer"></div>
+						    <div class="user-info">
+						        <div class="m-pic">
+						            <img id="avatarImg" src="../images/2.png">
+						        </div>
+								<div class="m-name" id="divnologin">
+                                         <a>您好，请登录</a>
+						        </div>
+						    </div>
+						    <div class="menu-list">
+						        <div class="m-nav">
+						            <div class="item"><a>我的订单</a></div>
+						            <div class="item"><a>我的关注</a></div>
+						            <div class="item"><a>我的优惠券</a></div>
+						            <div class="item"><a>我的积分</a></div>
+						        </div>
+						        <div class="m-btn">
+						            <div class="item"> <a>签到有好礼</a> </div>
+						            <div class="item"> <a>购物指南</a> </div>
+						        </div>
+						    </div>
+						    <div class="view-list">
+						        <div class="vl-title"><h4>最近浏览</h4><br><a>更多&nbsp;&gt;</a></div>
+						        <ul class="vl-cont" id="ulHistory"></ul>
+						    </div>
+						</div>
+					</div>
+				</li>
+				<li class="tspacer">|</li>
+				<li class="thover">
+					<div class="top-follow">
+						<a class="follow">关注良品</a>
+						<div  class="gzlp">
+							<img src="../images/followhide.jpg" alt="">
+						</div>
+					</div>
+				</li>
+				<li class="tspacer">|</li>
+				<li><a>官方网站</a></li>
+				<li class="tspacer">|</li>
+				<li><span class="tel">全国订购热线：<em>400-1177-517</em></span></li>
+				<li><a class="serv">在线客服<i style="text-decoration: none">.......</i></a></li>
+				
+			</ul>
+
+		</div>
+	</div>
+	<div class="headerbox">
+		<div class="header">
+			<div class="logo">
+				<a></a>
+			</div>
+			<div class="header_ser">
+				<div class="hot_ser">
+					<span>热门搜索：</span>
+					<a href="" class="red">松子</a>
+					<a href="">牛肉</a>
+					<a href="">开心果</a>
+					<a href="">核桃</a>
+					<a href="">话梅</a>
+					<a href="">花生瓜子</a>
+				</div>
+				<div class="ser_are">
+					<form action="">
+						<input class="sch-key" type="text" placeholder="商品搜索">
+						<input class="sch-btn" type="submit" value="搜 索">
+					</form>
+				</div>
+			</div>
+			<div class="header_shop">
+                <div class="shop_cart">
+                    <a class="cart_btn" href="">购物车</a>
+                    <span class="cart_num">
+                        <b>0</b>
+                    </span>
+                </div>
+                <div class="cart_list" style="display:none;">
+                    <span class="tit">最新加入的商品</span>
+                    <div class="cart_roll">
+                        <ul class="cart_goods"> 
+                            <!-- <li><div class="gd_lft"><a class="pic"><img src=""></a><a>葵花籽(奶油味)（190g)</a></div><div class="gd_price"><span>￥7.90<small>x1</small></span><a>删除</a></div></li> -->        
+                        </ul>
+                    </div>
+                    <div class="total">
+                        <p>共
+                            <span class="red">0</span>件商品，共计
+                            <span class="sum">￥<b>0.00</b></span>
+                        </p>
+                        <a class="settle" href="">去购物车结算</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="menu_box">
+			<div class="menu">
+				<ul class="menu-list">
+					<li><a>中秋月饼</a></li>
+					<li><a>10周年庆</a></li>
+					<li><a>8月新品</a></li>
+					<li><a>糖果糕点</a></li>
+					<li><a>进口食品</a></li>
+					<li><a>无肉不欢</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="bannerbox" style="height:440px">
+		<div id="banner">
+				<div class="goods">
+		<a class="fenlei" href="#">
+			<span>商品分类<i class="icon"></i></span>
+		</a>
+		<div class="sort-nav">
+			<ul id="menu_3">
+				<li class="">
+					<div class="top-sort">
+						<h3>
+							<a>
+								<i class="iconfont jg" ></i>坚果炒货
+							</a>
+						</h3>
+					</div>
+					<div class="sub-sort">
+						<ul class="sub-sort-list">
+							<li class="">
+								<a href="jglb.html">嗑壳坚果</a></li>
+							<li><a>果果仁仁</a></li>
+							<li><a>特惠炒货</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="">
+					<div class="top-sort">
+						<h3>
+							<a>
+								<i class="iconfont rp"></i>肉脯鱼干
+							</a>
+						</h3>
+					</div>
+					<div class="sub-sort">
+						<ul class="sub-sort-list">
+							<li><a>猪肉系列</a></li>
+							<li><a>牛肉系列</a></li>
+							<li class=""><a >鸡鸭系列</a></li>
+							<li class=""><a >海味系列</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="">
+					<div class="top-sort">
+						<h3>
+							<a>
+								<i class="iconfont gg"></i>果干果脯
+							</a>
+						</h3>
+					</div>
+					<div class="sub-sort">
+						<ul class="sub-sort-list">
+							<li><a>缤纷果干</a></li>
+							<li><a>话梅山楂</a></li>
+							<li class=""><a >红枣葡萄</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="">
+					<div class="top-sort">
+						<h3>
+							<a>
+								<i class="iconfont gd"></i>糕点糖果
+							</a>
+						</h3>
+					</div>
+					<div class="sub-sort">
+						<ul class="sub-sort-list">
+							<li><a>糕点系列</a></li>
+							<li><a>饼干系列</a></li>
+							<li><a>糖果系列</a></li>
+							<li><a>果冻系列</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="">
+					<div class="top-sort">
+						<h3>
+							<a>
+								<i class="iconfont ss"></i>素食山珍
+							</a>
+						</h3>
+					</div>
+					<div class="sub-sort">
+						<ul class="sub-sort-list">
+							<li><a>美味豆干</a></li>
+							<li><a>笋菌海带</a></li>
+							<li><a>其他山珍</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="">
+					<div class="top-sort">
+						<h3>
+							<a>
+								<i class="iconfont hc"></i>花茶饮品
+							</a>
+						</h3>
+					</div>
+					<div class="sub-sort">
+						<ul class="sub-sort-list">
+							<li><a>清香花茶</a></li>
+							<li><a>进口饮料</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="">
+					<div class="top-sort">
+						<h3>
+							<a>
+								<i class="iconfont jk"></i>进口食品
+							</a>
+						</h3>
+					</div>
+					<div class="sub-sort">
+						<ul class="sub-sort-list">
+							<li><a>进口糕点</a></li>
+							<li><a>进口糖果</a></li>
+							<li><a>休闲零食</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="">
+					<div class="top-sort">
+						<h3>
+							<a>
+								<i class="iconfont jx"></i>精选礼盒
+							</a>
+						</h3>
+					</div>
+					<div class="sub-sort">
+						<ul class="sub-sort-list">
+							<li><a>零食礼盒</a></li>
+							<li><a>年货量贩装</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="">
+					<div class="top-sort">
+						<h3>
+							<a>
+								<i class="iconfont dj"> </i>当季热销
+							</a>
+						</h3>
+					</div>
+					<div class="sub-sort">
+						<ul class="sub-sort-list">
+							<li><a>新品尝鲜</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+			<div id="banner_center">
+				<div id="pic_box">
+	                <ul id="pic_ul">
+	                    <li style="opacity:1;"><img src="../images/4.jpg" alt=""></li>
+	                    <li style="opacity:1;"><img src="../images/5.jpg" alt=""></li>
+	                    <li style="opacity:1;"><img src="../images/6.jpg" alt=""></li>
+	                </ul>
+	                <ul id="btn_ul">
+	                    <li style="background:#b61b1f;"></li>
+	                    <li></li>
+	                    <li></li>
+	                </ul>
+                </div>
+			</div>
+			<div id="banner_right">
+				<img src="../images/7.jpg" alt="">
+				<img src="../images/8.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- 活动 -->
+	<div class="activity">
+	  <ul class="act-list">
+	    <li>
+		    <h3>先领券再购物</h3>
+	        <div class="act-list-cont">
+	      	    <a>
+	      		   <img class="lazy"src="../images/9.jpg" style="display: block;">
+	      	    </a>
+	        </div>
+	    </li>
+	    <li>
+		    <h3>先领券再购物</h3>
+	        <div class="act-list-cont">
+	      	    <a>
+	      		   <img class="lazy"src="../images/10.jpg" style="display: block;">
+	      	    </a>
+	        </div>
+	    </li>
+	    <li>
+		    <h3>先领券再购物</h3>
+	        <div class="act-list-cont">
+	      	    <a>
+	      		   <img class="lazy"src="../images/11.jpg" style="display: block;">
+	      	    </a>
+	        </div>
+	    </li>
+	    <li>
+		    <h3>月饼专区</h3>
+	        <div class="act-list-cont">
+	      	    <a>
+	      		   <img class="lazy"src="../images/12.jpg" style="display: block;">
+	      	    </a>
+	        </div>
+	    </li>
+	  </ul>
+	</div>
+	<!-- 特惠专区 -->
+	<div class="discount">
+		<div class="discount_tit">
+			<h2>天天特惠</h2>
+			<ul class="discount_tabs">
+				<li class="active"><a>9.9元专区</a></li>
+				<li><a>每日秒杀</a></li>
+				<li><a>爆款直降</a></li> 
+			</ul>
+		</div>
+		<div class="discount_area">
+			<ul class="discount_area_list" style="display: block;">
+				<li><a><img class="lazy" style="display: block;" src="../images/th1.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th2.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th3.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th4.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th5.jpg"></a></li>
+			</ul>
+			<ul class="discount_area_list" style="display: none;">
+                <li><a><img class="lazy" style="display: block;" src="../images/th6.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th7.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th8.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th9.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th10.jpg"></a></li>
+			</ul>
+			<ul class="discount_area_list" style="display: none;">
+                <li><a><img class="lazy" style="display: block;" src="../images/th11.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th12.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th13.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th14.jpg"></a></li>
+				<li><a><img class="lazy" style="display: block;" src="../images/th15.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+
+<!-- 进入楼梯 -->
+<div id="louti">
+	<div id="floor1" class="storey_food">
+	    <div class="stor_top">
+	        <div class="stor_title"><span>1F</span><h2>坚果炒货</h2></div>
+	        <div class="stor_slide of_slide">
+	            <ul class="stor_list oslide">
+	                <li><a><img class="lazy" src="../images/jg1.jpg" style="display: block;"></a></li>
+	            </ul>					
+	        </div>
+	    </div>
+	    <div class="storey_cont">
+		    <div class="sc_title jk">
+		      <ul class="sct_tabs sct_tabs1">
+		        <li class="active"><a href="jglb.html">嗑壳坚果</a></li>
+		        <li><a>果果仁仁</a></li>
+		        <li><a>特惠炒货</a></li>
+		      </ul>
+		      <div class="sct_hot"> <a class="more">更多商品&gt;</a> </div>
+		    </div>
+		    <div class="sc_info">
+		        <div class="sin_node sin_node1" style="display: block;">
+		            <div class="node_first"> <a> <img class="lazy" src="../images/jg2.jpg" style="display: block;"></a></div>
+		            <ul class="node_list">
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg3.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">开心果（98g)</a> <span class="price"> <small>￥</small>9.<small>90</small> </span> </div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg4.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">手剥松子（120g)</a> <span class="price"> <small>￥</small>39.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg5.jpg" style="display: block;"></a></div>
+				            <div class="p_info"><a class="name">碧根果奶香味190g</a><span class="price"><small>￥</small>16.<small>90</small></span></div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg6.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg7.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 奶香夏威夷果120g </a> <span class="price"> <small>￥</small>11.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg8.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+		            </ul>
+		        </div>
+				<div class="sin_node sin_node1" style="display: none;">
+					<div class="node_first"><a><img class="lazy" src="../images/jg9.jpg" style="display: block;"></a></div>
+					<ul class="node_list">
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg10.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 盐焗扁桃仁210g </a> <span class="price"> <small>￥</small>29.<small>90</small> </span> </div>
+			            </li>
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg11.jpg" style="display: block;"></a> </div>
+				            <div class="p_info">  <a class="name"> 腰果（番茄味）180g </a> <span class="price"> <small>￥</small>19.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg12.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 综合果仁175g </a> <span class="price"> <small>￥</small>33.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg13.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 甘栗80g 每个ID限购2份 </a> <span class="price"> <small>￥</small>4.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg14.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 蜂蜜黄油扁桃仁（30g) </a> <span class="price"> <small>￥</small>6.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg15.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 野山小核桃仁160g </a> <span class="price"> <small>￥</small>58.<small>80</small> </span></div>
+				        </li>
+					 
+					</ul>
+				</div>
+			    <div class="sin_node sin_node1" style="display: none;">
+			        <div class="node_first"> <a> <img class="lazy" src="../images/jg16.jpg" style="display: block;"> </a> </div>
+			        <ul class="node_list">
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg17.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 小米锅巴（孜然味）90g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg18.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 紫薯花生120g </a> <span class="price"> <small>￥</small>6.<small>90</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg19.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 牛肉味兰花豆110g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg20.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 炒米（蛋黄味）240g电商 </a> <span class="price"> <small>￥</small>12.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg21.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 沙拉薯条45g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jg22.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 一根葱薯条葱香味80g   每个ID限购1件 </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+			        </ul>
+			    </div>
+	        </div>
+	    </div>
+    </div>
+    <div id="floor2" class="storey_food">
+	    <div class="stor_top">
+	        <div class="stor_title"><span>2F</span><h2>肉脯鱼干</h2></div>
+	        <div class="stor_slide of_slide">
+	            <ul class="stor_list oslide">
+	                <li><a><img class="lazy" src="../images/rp1.jpg" style="display: block;"></a></li>
+	            </ul>					
+	        </div>
+	    </div>
+	    <div class="storey_cont">
+		    <div class="sc_title jk">
+		      <ul class="sct_tabs sct_tabs2">
+		        <li class="active"><a>猪肉系列</a></li>
+		        <li><a>牛肉系列</a></li>
+		        <li><a>鸡鸭系列</a></li>
+		      </ul>
+		      <div class="sct_hot"> <a class="more">更多商品&gt;</a> </div>
+		    </div>
+		    <div class="sc_info">
+		        <div class="sin_node sin_node2" style="display: block;">
+		            <div class="node_first"> <a> <img class="lazy" src="../images/rp2.jpg" style="display: block;"></a></div>
+		            <ul class="node_list">
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp3.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">开心果（98g)</a> <span class="price"> <small>￥</small>9.<small>90</small> </span> </div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp4.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">手剥松子（120g)</a> <span class="price"> <small>￥</small>39.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp5.jpg" style="display: block;"></a></div>
+				            <div class="p_info"><a class="name">碧根果奶香味190g</a><span class="price"><small>￥</small>16.<small>90</small></span></div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp6.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp7.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 奶香夏威夷果120g </a> <span class="price"> <small>￥</small>11.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp8.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+		            </ul>
+		        </div>
+				<div class="sin_node sin_node2" style="display: none;">
+					<div class="node_first"><a><img class="lazy" src="../images/rp9.jpg" style="display: block;"></a></div>
+					<ul class="node_list">
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp10.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 盐焗扁桃仁210g </a> <span class="price"> <small>￥</small>29.<small>90</small> </span> </div>
+			            </li>
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp11.jpg" style="display: block;"></a> </div>
+				            <div class="p_info">  <a class="name"> 腰果（番茄味）180g </a> <span class="price"> <small>￥</small>19.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp12.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 综合果仁175g </a> <span class="price"> <small>￥</small>33.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp13.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 甘栗80g 每个ID限购2份 </a> <span class="price"> <small>￥</small>4.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp14.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 蜂蜜黄油扁桃仁（30g) </a> <span class="price"> <small>￥</small>6.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp15.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 野山小核桃仁160g </a> <span class="price"> <small>￥</small>58.<small>80</small> </span></div>
+				        </li>
+					 
+					</ul>
+				</div>
+			    <div class="sin_node sin_node2" style="display: none;">
+			        <div class="node_first"> <a> <img class="lazy" src="../images/rp16.jpg" style="display: block;"> </a> </div>
+			        <ul class="node_list">
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp17.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 小米锅巴（孜然味）90g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp18.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 紫薯花生120g </a> <span class="price"> <small>￥</small>6.<small>90</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp19.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 牛肉味兰花豆110g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp20.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 炒米（蛋黄味）240g电商 </a> <span class="price"> <small>￥</small>12.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp21.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 沙拉薯条45g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/rp22.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 一根葱薯条葱香味80g   每个ID限购1件 </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+			        </ul>
+			    </div>
+	        </div>
+	    </div>
+    </div>
+    <div id="floor3" class="storey_food">
+	    <div class="stor_top">
+	        <div class="stor_title"><span>3F</span><h2>果干果脯</h2></div>
+	        <div class="stor_slide of_slide">
+	            <ul class="stor_list oslide">
+	                <li><a><img class="lazy" src="../images/gg1.jpg" style="display: block;"></a></li>
+	            </ul>					
+	        </div>
+	    </div>
+	    <div class="storey_cont">
+		    <div class="sc_title jk">
+		      <ul class="sct_tabs sct_tabs3">
+		        <li class="active"><a>缤纷果干</a></li>
+		        <li><a>话梅山楂</a></li>
+		        <li><a>红枣葡萄</a></li>
+		      </ul>
+		      <div class="sct_hot"> <a class="more">更多商品&gt;</a> </div>
+		    </div>
+		    <div class="sc_info">
+		        <div class="sin_node sin_node3" style="display: block;">
+		            <div class="node_first"> <a> <img class="lazy" src="../images/gg2.jpg" style="display: block;"></a></div>
+		            <ul class="node_list">
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg3.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">开心果（98g)</a> <span class="price"> <small>￥</small>9.<small>90</small> </span> </div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg4.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">手剥松子（120g)</a> <span class="price"> <small>￥</small>39.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg5.jpg" style="display: block;"></a></div>
+				            <div class="p_info"><a class="name">碧根果奶香味190g</a><span class="price"><small>￥</small>16.<small>90</small></span></div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg6.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg7.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 奶香夏威夷果120g </a> <span class="price"> <small>￥</small>11.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg8.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+		            </ul>
+		        </div>
+				<div class="sin_node sin_node3" style="display: none;">
+					<div class="node_first"><a><img class="lazy" src="../images/gg9.jpg" style="display: block;"></a></div>
+					<ul class="node_list">
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg10.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 盐焗扁桃仁210g </a> <span class="price"> <small>￥</small>29.<small>90</small> </span> </div>
+			            </li>
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg11.jpg" style="display: block;"></a> </div>
+				            <div class="p_info">  <a class="name"> 腰果（番茄味）180g </a> <span class="price"> <small>￥</small>19.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg12.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 综合果仁175g </a> <span class="price"> <small>￥</small>33.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg13.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 甘栗80g 每个ID限购2份 </a> <span class="price"> <small>￥</small>4.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg14.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 蜂蜜黄油扁桃仁（30g) </a> <span class="price"> <small>￥</small>6.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg15.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 野山小核桃仁160g </a> <span class="price"> <small>￥</small>58.<small>80</small> </span></div>
+				        </li>
+					 
+					</ul>
+				</div>
+			    <div class="sin_node sin_node3" style="display: none;">
+			        <div class="node_first"> <a> <img class="lazy" src="../images/gg16.jpg" style="display: block;"> </a> </div>
+			        <ul class="node_list">
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg17.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 小米锅巴（孜然味）90g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg18.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 紫薯花生120g </a> <span class="price"> <small>￥</small>6.<small>90</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg19.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 牛肉味兰花豆110g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg20.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 炒米（蛋黄味）240g电商 </a> <span class="price"> <small>￥</small>12.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg21.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 沙拉薯条45g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gg22.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 一根葱薯条葱香味80g   每个ID限购1件 </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+			        </ul>
+			    </div>
+	        </div>
+	    </div>
+    </div>
+     <div id="floor4" class="storey_food">
+	    <div class="stor_top">
+	        <div class="stor_title"><span>4F</span><h2>素食山珍</h2></div>
+	        <div class="stor_slide of_slide">
+	            <ul class="stor_list oslide">
+	                <li><a><img class="lazy" src="../images/ss1.jpg" style="display: block;"></a></li>
+	            </ul>					
+	        </div>
+	    </div>
+	    <div class="storey_cont">
+		    <div class="sc_title jk">
+		      <ul class="sct_tabs sct_tabs4">
+		        <li class="active"><a>美味豆干</a></li>
+		        <li><a>笋菌海带</a></li>
+		        <li><a>其他山珍</a></li>
+		      </ul>
+		      <div class="sct_hot"> <a class="more">更多商品&gt;</a> </div>
+		    </div>
+		    <div class="sc_info">
+		        <div class="sin_node sin_node4" style="display: block;">
+		            <div class="node_first"> <a> <img class="lazy" src="../images/ss2.jpg" style="display: block;"></a></div>
+		            <ul class="node_list">
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss3.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">开心果（98g)</a> <span class="price"> <small>￥</small>9.<small>90</small> </span> </div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss4.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">手剥松子（120g)</a> <span class="price"> <small>￥</small>39.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss5.jpg" style="display: block;"></a></div>
+				            <div class="p_info"><a class="name">碧根果奶香味190g</a><span class="price"><small>￥</small>16.<small>90</small></span></div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss6.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss7.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 奶香夏威夷果120g </a> <span class="price"> <small>￥</small>11.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss8.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+		            </ul>
+		        </div>
+				<div class="sin_node sin_node4" style="display: none;">
+					<div class="node_first"><a><img class="lazy" src="../images/ss9.jpg" style="display: block;"></a></div>
+					<ul class="node_list">
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss10.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 盐焗扁桃仁210g </a> <span class="price"> <small>￥</small>29.<small>90</small> </span> </div>
+			            </li>
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss11.jpg" style="display: block;"></a> </div>
+				            <div class="p_info">  <a class="name"> 腰果（番茄味）180g </a> <span class="price"> <small>￥</small>19.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss12.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 综合果仁175g </a> <span class="price"> <small>￥</small>33.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss13.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 甘栗80g 每个ID限购2份 </a> <span class="price"> <small>￥</small>4.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss14.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 蜂蜜黄油扁桃仁（30g) </a> <span class="price"> <small>￥</small>6.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss15.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 野山小核桃仁160g </a> <span class="price"> <small>￥</small>58.<small>80</small> </span></div>
+				        </li>
+					 
+					</ul>
+				</div>
+			    <div class="sin_node sin_node4" style="display: none;">
+			        <div class="node_first"> <a> <img class="lazy" src="../images/ss16.jpg" style="display: block;"> </a> </div>
+			        <ul class="node_list">
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss17.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 小米锅巴（孜然味）90g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss18.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 紫薯花生120g </a> <span class="price"> <small>￥</small>6.<small>90</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss19.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 牛肉味兰花豆110g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss20.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 炒米（蛋黄味）240g电商 </a> <span class="price"> <small>￥</small>12.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss21.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 沙拉薯条45g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/ss22.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 一根葱薯条葱香味80g   每个ID限购1件 </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+			        </ul>
+			    </div>
+	        </div>
+	    </div>
+    </div>
+    <div id="floor5" class="storey_food">
+	    <div class="stor_top">
+	        <div class="stor_title"><span>5F</span><h2>糕点糖果</h2></div>
+	        <div class="stor_slide of_slide">
+	            <ul class="stor_list oslide">
+	                <li><a><img class="lazy" src="../images/gd1.jpg" style="display: block;"></a></li>
+	            </ul>					
+	        </div>
+	    </div>
+	    <div class="storey_cont">
+		    <div class="sc_title jk">
+		      <ul class="sct_tabs sct_tabs5">
+		        <li class="active"><a>糕点系列</a></li>
+		        <li><a>饼干系列</a></li>
+		        <li><a>糖果系列</a></li>
+		      </ul>
+		      <div class="sct_hot"> <a class="more">更多商品&gt;</a> </div>
+		    </div>
+		    <div class="sc_info">
+		        <div class="sin_node sin_node5" style="display: block;">
+		            <div class="node_first"> <a> <img class="lazy" src="../images/gd2.jpg" style="display: block;"></a></div>
+		            <ul class="node_list">
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd3.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">开心果（98g)</a> <span class="price"> <small>￥</small>9.<small>90</small> </span> </div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd4.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">手剥松子（120g)</a> <span class="price"> <small>￥</small>39.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd5.jpg" style="display: block;"></a></div>
+				            <div class="p_info"><a class="name">碧根果奶香味190g</a><span class="price"><small>￥</small>16.<small>90</small></span></div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd6.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd7.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 奶香夏威夷果120g </a> <span class="price"> <small>￥</small>11.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd8.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+		            </ul>
+		        </div>
+				<div class="sin_node sin_node5" style="display: none;">
+					<div class="node_first"><a><img class="lazy" src="../images/gd9.jpg" style="display: block;"></a></div>
+					<ul class="node_list">
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd10.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 盐焗扁桃仁210g </a> <span class="price"> <small>￥</small>29.<small>90</small> </span> </div>
+			            </li>
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd11.jpg" style="display: block;"></a> </div>
+				            <div class="p_info">  <a class="name"> 腰果（番茄味）180g </a> <span class="price"> <small>￥</small>19.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd12.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 综合果仁175g </a> <span class="price"> <small>￥</small>33.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd13.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 甘栗80g 每个ID限购2份 </a> <span class="price"> <small>￥</small>4.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd14.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 蜂蜜黄油扁桃仁（30g) </a> <span class="price"> <small>￥</small>6.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd15.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 野山小核桃仁160g </a> <span class="price"> <small>￥</small>58.<small>80</small> </span></div>
+				        </li>
+					 
+					</ul>
+				</div>
+			    <div class="sin_node sin_node5" style="display: none;">
+			        <div class="node_first"> <a> <img class="lazy" src="../images/gd16.jpg" style="display: block;"> </a> </div>
+			        <ul class="node_list">
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd17.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 小米锅巴（孜然味）90g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd18.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 紫薯花生120g </a> <span class="price"> <small>￥</small>6.<small>90</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd19.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 牛肉味兰花豆110g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd20.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 炒米（蛋黄味）240g电商 </a> <span class="price"> <small>￥</small>12.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd21.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 沙拉薯条45g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/gd22.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 一根葱薯条葱香味80g   每个ID限购1件 </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+			        </ul>
+			    </div>
+	        </div>
+	    </div>
+    </div>
+     <div id="floor6" class="storey_food">
+	    <div class="stor_top">
+	        <div class="stor_title"><span>6F</span><h2>进口食品</h2></div>
+	        <div class="stor_slide of_slide">
+	            <ul class="stor_list oslide">
+	                <li><a><img class="lazy" src="../images/jk1.jpg" style="display: block;"></a></li>
+	            </ul>					
+	        </div>
+	    </div>
+	    <div class="storey_cont">
+		    <div class="sc_title jk">
+		      <ul class="sct_tabs sct_tabs6">
+		        <li class="active"><a>进口糕点</a></li>
+		        <li><a>进口糖果</a></li>
+		        <li><a>休闲零食</a></li>
+		      </ul>
+		      <div class="sct_hot"> <a class="more">更多商品&gt;</a> </div>
+		    </div>
+		    <div class="sc_info">
+		        <div class="sin_node sin_node6" style="display: block;">
+		            <div class="node_first"> <a> <img class="lazy" src="../images/jk2.jpg" style="display: block;"></a></div>
+		            <ul class="node_list">
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk3.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">开心果（98g)</a> <span class="price"> <small>￥</small>9.<small>90</small> </span> </div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk4.jpg" style="display: block;"></a></div>
+				            <div class="p_info"> <a class="name">手剥松子（120g)</a> <span class="price"> <small>￥</small>39.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk5.jpg" style="display: block;"></a></div>
+				            <div class="p_info"><a class="name">碧根果奶香味190g</a><span class="price"><small>￥</small>16.<small>90</small></span></div>
+				        </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk6.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk7.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 奶香夏威夷果120g </a> <span class="price"> <small>￥</small>11.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk8.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 手剥甘栗120g </a> <span class="price"> <small>￥</small>8.<small>28</small> </span> </div>
+			            </li>
+		            </ul>
+		        </div>
+				<div class="sin_node sin_node6" style="display: none;">
+					<div class="node_first"><a><img class="lazy" src="../images/jk9.jpg" style="display: block;"></a></div>
+					<ul class="node_list">
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk10.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 盐焗扁桃仁210g </a> <span class="price"> <small>￥</small>29.<small>90</small> </span> </div>
+			            </li>
+					    <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk11.jpg" style="display: block;"></a> </div>
+				            <div class="p_info">  <a class="name"> 腰果（番茄味）180g </a> <span class="price"> <small>￥</small>19.<small>90</small> </span> </div>
+			            </li>
+			            <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk12.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 综合果仁175g </a> <span class="price"> <small>￥</small>33.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk13.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 甘栗80g 每个ID限购2份 </a> <span class="price"> <small>￥</small>4.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk14.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 蜂蜜黄油扁桃仁（30g) </a> <span class="price"> <small>￥</small>6.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk15.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 野山小核桃仁160g </a> <span class="price"> <small>￥</small>58.<small>80</small> </span></div>
+				        </li>
+					 
+					</ul>
+				</div>
+			    <div class="sin_node sin_node6" style="display: none;">
+			        <div class="node_first"> <a> <img class="lazy" src="../images/jk16.jpg" style="display: block;"> </a> </div>
+			        <ul class="node_list">
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk17.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 小米锅巴（孜然味）90g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk18.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"> <a class="name"> 紫薯花生120g </a> <span class="price"> <small>￥</small>6.<small>90</small> </span> </div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk19.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 牛肉味兰花豆110g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk20.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 炒米（蛋黄味）240g电商 </a> <span class="price"> <small>￥</small>12.<small>90</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk21.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 沙拉薯条45g </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+				        <li>
+				            <div class="p_img"><a> <img class="lazy" src="../images/jk22.jpg" style="display: block;"></a> </div>
+				            <div class="p_info"><a class="name"> 一根葱薯条葱香味80g   每个ID限购1件 </a> <span class="price"> <small>￥</small>5.<small>00</small> </span></div>
+				        </li>
+			        </ul>
+			    </div>
+	        </div>
+	    </div>
+    </div>
+</div>
+        <div class="lpzx">
+			<h2>良品咨询</h2>
+			<ul>
+				<li>
+					<h3>良粉俱乐部</h3>
+					<div class="pic_nr">
+						<a><img class="lazy" src="../images/zx1.jpg"></a>
+					</div>
+				</li>
+				<li>
+					<h3>铺子有话说</h3>
+					<div class="pic_nr">
+						<a><img class="lazy" src="../images/zx1.jpg"></a>
+					</div>
+				</li>
+				<li class="lpwb">
+					<h3>良品微博</h3>
+					<div class="pic_nr" id="lppzwb">
+						<a><img class="lazy" src="../images/weibobg.jpg"></a>
+					</div>
+				</li>
+	    	</ul>
+	    </div>
+<!-- - - - - -  楼层定位 - - - - - -  -->
+<div class="floor-nav" id="dwlt" style="display: none;">
+	<span class="fn-tit">商品分类</span>
+	<ul class="fn-list">
+		<li class="jk" style="background:url(../images/floor1.jpg) center center no-repeat"><a><span>坚果炒货</span></a></li>
+		<li class="jk" style="background:url(../images/floor2.jpg) center center no-repeat"><a><span>肉脯鱼干</span></a></li>
+		<li class="jk" style="background:url(../images/floor3.jpg) center center no-repeat"><a><span>果干果脯</span></a></li>
+		<li class="jk" style="background:url(../images/floor4.jpg) center center no-repeat"><a><span>素食山珍</span></a></li>
+		<li class="jk" style="background:url(../images/floor5.jpg) center center no-repeat"><a><span>糕点糖果</span></a></li>
+		<li class="jk" style="background:url(../images/floor6.jpg) center center no-repeat"><a style="border-bottom:1px solid #dedede;"><span>进口食品</span></a></li>
+	</ul>
+</div>
+<!-- - - - - - - -底部 - - - - -  -->
+	<div class="footer">
+		<!-- <div class="foot_service">
+			<ul>
+				<li class="li1"><p class="p1">100%</p><p class="p2">正品保证</p></li>
+				<li class="li2"><p class="p1">10天</p><p class="p2">无理由退换货</p></li>
+				<li class="li3"><p class="p1">满68元</p><p class="p2">全程包邮</p></li>
+				<li class="li4"><p class="p1">积分抵现金</p><p class="p2">100积分=1元</p></li>
+				<li class="li5"><p class="p1">开箱验货</p><p class="p2">先验货再签收</p></li>
+				<li class="li6"><p class="p1">闪电发货</p><p class="p2">零等待</p></li>
+			</ul>
+		</div>
+		<div class="foot_area">
+			<div class="foot_cont">
+				<div class="rxlx">
+					<div class="rxlx_rx">热线</div>
+					<div class="rxlx_lx">
+						<p><strong>400-1177-517</strong></p>
+						<p>良品铺子客服热线<br>
+						周一至周日：9：00-22：00</p>
+						<p>招商热线<br>
+						400-1177-517</p>
+					</div>
+				</div>
+				<div class="links">
+					<dl>
+						<dt><strong>购物指南</strong></dt>
+						<dd>
+							<a>安全账户</a>
+							<a>购物流程</a>
+							<a>老顾客重置密码</a>
+							<a>生日礼购物流程</a>
+							<a>找回密码</a>
+						</dd>	
+					</dl>
+					<dl>
+						<dt><strong>物流配送</strong></dt>
+						<dd>
+							<a>配送说明</a>
+							<a>签收与验货</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><strong>付款说明</strong></dt>
+						<dd>
+							<a>发票制度</a>
+							<a>公司转账</a>
+							<a>在线支付</a>
+						</dd>		
+					</dl>
+					<dl>
+						<dt><strong>客户服务</strong></dt>
+						<dd>
+							<a>退换货服务</a>
+							<a>联系我们</a>
+							<a>退款说明</a>
+						</dd>	
+					</dl>
+					<dl>
+						<dt><strong>会员专区</strong></dt>
+						<dd>
+							<a>优惠券使用规则</a>
+							<a>积分制度</a>
+							<a>会员须知</a>
+						</dd>	
+					</dl>
+				</div>
+				<div class="wb_follow">
+					<div class="wbsm">
+						<img src="../images/follow.jpg">
+						<span>微信二维码</span>
+					</div>
+					<div class="weibo_mail">
+						<div class="wb_tit">微博关注</div>
+						<div class="wb_pic">
+							<img src="../images/qgz.jpg">
+						    <span>51.6万</span>
+	                 		</div>
+					</div>
+				</div>
+			</div>
+	
+			底部导航
+			<div class="foot_nav">
+		        <ul>
+					<li><a>关于我们</a>|</li>
+					<li><a>联系我们</a>|</li>
+					<li><a>客户服务</a>|</li>
+				s	<li><a>诚聘英才</a>|</li>
+					<li><a>商务合作</a>|</li>
+	            		<li><a>媒体报道</a>|</li>
+					<li><a>网站地图</a>|</li>
+					<li><a>站长招募</a></li>
+				</ul>
+			</div>
+			<div class="Copyright">
+				Copyright@2006-2016 湖北良品铺子电子商务有限公司 All rights Reserved
+				<br>
+				<a>鄂ICP备15022981号</a>
+				<br>
+				<img src="../images/wj.jpg">
+			</div>
+		</div> -->
+	</div>
+<div class="right-navbar">
+    <ul class="rnb-list">
+	    <li class="kf">
+	    	<a class="hvr" id="ntkf_chat_entrance" >
+	    		<span>客服咨询</span>
+	    		<div style="height:35px;background: url(../images/bg.png) -97px -596px no-repeat;"></div>
+	    	</a>
+	    </li>
+	    <li class="gw indexcart">
+	    	<a href="">
+	    		<div style="height:35px;background: url(../images/bg.png) -97px -638px no-repeat;"></div>
+	    		<span>购物车</span>
+	    		<small class="sum" id="cartcount">0</small>
+	    	</a>
+	    </li>
+	    <li class="hy">
+	    	<a class="hvr">
+	    		<span>会员中心</span>
+	    		<div style="height:35px;background:url(../images/bg.png) -97px -684px no-repeat;"></div>
+	    	</a>
+	    </li>
+	    <li class="yh">
+	    	<a class="hvr">
+	    		<span>我的优惠券</span>
+	    		<div style="height:35px;background:url(../images/bg.png) -97px -731px no-repeat;"></div>
+	    	</a>
+	    </li>
+	    <li class="sc">
+	    	<a class="hvr">
+	    		<span>我的关注</span>
+	    		<div style="height:35px;background:url(../images/bg.png) -97px -780px no-repeat;"></div>
+	    	</a>
+	    </li>
+    </ul>
+    <ul class="rnb-link">
+	    <li class="qr">
+	    	<a href="#">
+	    		<div style="height:35px;background:url(../images/bg.png) -97px -925px no-repeat;"></div>
+	    	</a>
+	    	<div class="cust">
+	    		<img src="../images/3.jpg" alt="扫一扫关注微信" width="170" height="190">
+	    		<span class="arrow"></span>
+	    	</div>
+	    </li>
+	    <li class="goback">
+	    	<a class="hvr" href="#">
+	    		<span class="fhdb">返回顶部</span>
+	    		<div style="height:35px;background: url(../images/bg.png) -97px -968px no-repeat;"></div>
+	    	</a>
+	    </li>
+    </ul>
+</div>
+
+    <script type="text/javascript" src="../js/index.js"></script>
+</html>
